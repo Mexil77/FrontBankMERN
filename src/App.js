@@ -5,16 +5,16 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "./App.css";
 import "./components/FontawesomeIcons";
 
-import Navigation from "./components/Navigation";
-import CargosPage from "./components/CargosPage";
-import ClientesPage from "./components/ClientesPage";
-import CreateCargo from "./components/CreateCargo";
-import Abonar from "./components/Abonar";
-import Home from "./components/Home";
-import AgregaUsuario from "./components/AgregaUsuario";
-import EditarCargo from "./components/EditarCargo";
-import InversionistasPage from "./components/InversionistasPage";
-import AgregaInversionista from "./components/AgregaInversionista";
+import Navigation from "./components/Extras/Navigation";
+import CargosPage from "./components/CargosPage/CargosPage";
+import ClientesPage from "./components/ClientesPage/ClientesPage";
+import CreateCargo from "./components/CreateCargoPage/CreateCargo";
+import Abonar from "./components/AbonaPage/Abonar";
+import Home from "./components/HomePage/Home";
+import AgregaUsuario from "./components/AgregaUsuarioPage/AgregaUsuario";
+import EditarCargo from "./components/Extras/EditarCargo";
+import InversionistasPage from "./components/InversionistasPage/InversionistasPage";
+import AgregaInversionista from "./components/AgregaInversionistaPage/AgregaInversionista";
 
 function App() {
   return (
