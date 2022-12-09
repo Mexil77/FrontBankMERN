@@ -14,15 +14,27 @@ export default class Home extends Component {
 
   componentDidMount() {
     if (cookies.get("id")) {
-      this.setState({
-        user: true,
-      });
+      this.setState(
+        {
+          user: true,
+        },
+        this.addUserToBack
+      );
     } else {
       this.setState({
         user: false,
       });
     }
   }
+
+  addUserToBack = async () => {
+    const queryUser = { id: cookies.get("id") };
+    const res = await axios.post(
+      `${process.env.REACT_APP_URI_PREFIX_WEB}/api/users/cookie`,
+      queryUser
+    );
+    console.log(res);
+  };
 
   onChange = (e) => {
     this.setState({
